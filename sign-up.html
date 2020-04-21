@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Dotted Line.</title>
+  <title>Dotted Line — Sign Up/Log In</title>
   <link href="https://fonts.googleapis.com/css?family=Calistoga|Kulim+Park&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
@@ -16,10 +16,11 @@
     <li><a href="#main">Jump to main content</a></li>
     <li><a href="#nav">Jump to navigation</a></li>
     <li><a href="#search">Jump to form</a></li>
+    <li><a href="#complementary">Jump to Log In</a></li>
     <li><a href="#contentinfo">Jump to footer</a></li>
   </ul>
 
-  <header class="unit xs-1 s-1 m-1 l-1 grid" role="banner">
+  <header tabindex="0" class="unit xs-1 s-1 m-1 l-1 grid" role="banner">
     <div class="unit text-center pad-t-1-2 xs-1 s-1 m-1-4 l-1-4">
       <h1 class="giga headline">DOTTED LINE.</h1>
     </div>
@@ -27,7 +28,7 @@
       <a class="btn text-right" href="sign-up.html">Log In / Sign Up</a>
     </div>
     <div class="unit xs-0 s-0 m-1 l-1">
-      <nav role="navigation" tabindex="0">
+      <nav role="navigation" id="nav" tabindex="0">
         <ol class="list-group-inline grid">
           <li class="unit island-1-4 xs-0 s-0 m-1-3 text-center nav"><a href="index.html">Home</a></li>
           <li class="unit island-1-4 xs-0 s-0 m-1-3 text-center nav"><a href="tour.html">Take a Tour</a></li>
@@ -37,13 +38,13 @@
     </div>
   </header>
 
-  <section role="main" class="gutter unit s-1 pad-t-2">
+  <main role="main" id="main" tabindex="0" class="gutter unit s-1 pad-t-2">
     <h2>Join the Dotted Line Family!</h2>
     <p class="mega">Welcome aboard! Enter the required information below to continue.</p>
     <fieldset>
-      <legend class="italic giga">Register</legend>
+      <legend class="giga">Register</legend>
     </fieldset>
-    <form role="search" class="grid" method="POST" action="#">
+    <form role="search" id="search" tabindex="0" class="grid" method="POST" action="https://formspree.io/mlewqran">
       <div class="push unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2">
         <label for="name">Name</label>
         <input id="name" name="name" required>
@@ -54,7 +55,7 @@
       </div>
       <div class="push unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2">
         <label for="email">Email</label>
-        <input id="email" type="email" name="email" placeholder="Johnny@Appleseed.com" required>
+        <input id="email" type="email" name="email" required>
       </div>
       <div class="push unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2">
         <label for="plans">Select a Plan</label>
@@ -66,11 +67,11 @@
       </div>
       <div class="push unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2">
         <label for="credit">Credit Card</label>
-        <input id="credit" name="credit card" required minlength="16" placeholder="1111-2222-3333-4444">
+        <input id="credit" name="credit card" required minlength="16">
       </div>
       <div class="push unit gutter-1-2 xs-1 s-1 m-1-4 l-1-4">
         <label for="cvv">CVV</label>
-        <input id="cvv" name="cvv" required placeholder="***">
+        <input id="cvv" name="cvv" required maxlength="3">
       </div>
       <div class="push unit xs-1 s-1 m-1 l-1 gutter-1-2">
         <label for="address">Billing Address</label>
@@ -78,21 +79,21 @@
       </div>
 
       <div class="push unit xs-1 s-1 m-1 l-1 text-center">
-        <button class="btn" title="Submit Information" type="submit">Register</button>
+        <button class="btn" type="submit">Register</button>
       </div>
     </form>
-  </section>
+  </main>
 
-  <section class="gutter unit s-1 pad-t-2">
+  <section role="complementary" id="complementary" class="gutter unit s-1 m-1 l-1 pad-t-2">
     <h2>Already a Member?</h2>
     <fieldset>
-      <legend class="italic giga">Log In</legend>
+      <legend class="giga">Log In</legend>
     </fieldset>
-    <form class="grid" method="POST" action="#">
+    <form class="grid" method="POST" action="https://formspree.io/mlewqran">
 
       <div class="push unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2">
-        <label for="email">Email</label>
-        <input id="username" type="email" name="email" placeholder="Johnny@Appleseed.com" required>
+        <label for="login">Email</label>
+        <input id="login" type="email" name="email" required>
       </div>
       <div class="push business gutter-1-2 unit xs-1 s-1 m-1-2 l-1-2">
         <label for="password">Password</label>
@@ -100,16 +101,18 @@
       </div>
 
       <div class="push unit xs-1 s-1 m-1 l-1 text-center">
-        <button class="btn" title="Submit Information" type="submit">Log In</button>
+        <button class="btn" type="submit">Log In</button>
       </div>
     </form>
+
+    <div class="unit gutter xs-1 m-1-3 l-1-3 embed embed-4by3">
+      <img class="embed-item" src="images/placeholder-4by3.svg" alt="#">
+    </div>
   </section>
 
-  <footer class="unit text-center m-1">
+  <footer role="contentinfo" id="contentinfo" tabindex="0" class="unit text-center m-1">
     <p>Dotted Line©</p>
   </footer>
-
-
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Dotted Line.</title>
+  <title>Dotted Line — Tour</title>
   <link href="https://fonts.googleapis.com/css?family=Calistoga|Kulim+Park&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/modules.css" rel="stylesheet">
@@ -15,6 +15,7 @@
   <ul class="skip-links unit">
     <li><a href="#main">Jump to main content</a></li>
     <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#complementary">Jump to features</a></li>
     <li><a href="#contentinfo">Jump to footer</a></li>
   </ul>
 
@@ -26,7 +27,7 @@
       <a class="btn text-right" href="sign-up.html">Log In / Sign Up</a>
     </div>
     <div class="unit xs-0 s-0 m-1 l-1">
-      <nav role="navigation" tabindex="0">
+      <nav role="navigation" id="nav" tabindex="0">
         <ol class="list-group-inline grid">
           <li class="unit island-1-4 xs-0 s-0 m-1-3 text-center nav"><a href="index.html">Home</a></li>
           <li class="unit island-1-4 xs-0 s-0 m-1-3 current text-center nav"><a href="tour.html">Take a Tour</a></li>
@@ -36,7 +37,7 @@
     </div>
   </header>
 
-  <main role="main" class="unit s-1 pad-t-2 pad-b-2 gutter-1-2">
+  <main role="main" id="main" class="unit s-1 pad-t-2 pad-b-2 gutter-1-2" tabindex="0">
     <div class="wrapper">
       <h2 class="nina">Our Plans</h2>
 
@@ -84,9 +85,9 @@
             <tr>
               <th class="not-bold italic" scope="row"></th>
               <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td class="text-center"><a class="btn" href="sign-up.html">Sign Up</a></td>
+              <td class="text-center"><a class="btn" href="sign-up.html">Sign Up</a></td>
+              <td class="text-center"><a class="btn" href="#">Contact Us</a></td>
             </tr>
           </tbody>
           <tfoot class="bold">
@@ -95,37 +96,37 @@
               <td></td>
               <td class="text-center">$13/Month</td>
               <td class="text-center">$40/Month</td>
-              <td class="text-center">Contact Us</td>
+              <td class="text-center"></td>
             </tr>
           </tfoot>
         </table>
       </div>
     </div>
-    <section class="grid grid-middle">
+    <section role="complementary" id="complementary" class="grid grid-middle" tabindex="0">
       <div class="unit pad-t-2 s-1">
         <h2 class="nina">Our Services</h2>
       </div>
-      <div class="unit-s-1 pad-t-2 pad-b-2 grid sleep">
-        <div class="unit island xs-1 m-1-3">
-          <img class="img-flex" src="images/placeholder-4by3.svg" alt="#">
+      <div class="unit s-1 pad-t-2 pad-b-2 grid sleep">
+        <div class="unit gutter xs-1 m-1-3 l-1-3 embed embed-4by3">
+          <img class="embed-item" src="images/placeholder-4by3.svg" alt="#">
         </div>
         <div class="unit s-1 m-1-2">
           <h2 class="zetta">Our Template Library</h2>
           <p class="max-length">Choose from hundreds of templates or search for one that meets your legal needs.</p>
         </div>
       </div>
-      <div class="unit-s-1 pad-b-2 pad-t-2 grid flex">
+      <div class="unit s-1 pad-b-2 pad-t-2 grid flex">
         <div class="text-right gutter-1-2 unit s-1 m-1-2">
           <h2 class="zetta">Bulk Sending</h2>
           <p>Whether it’s internal or external signatures you need, Dotted Line has the toolkit you need to reach any size of audience.</p>
         </div>
-        <div class="unit xs-1 s-1 m-1-3">
-          <img class="img-flex" src="images/placeholder-4by3.svg" alt="#">
+        <div class="unit gutter xs-1 m-1-3 l-1-3 embed embed-4by3">
+          <img class="embed-item" src="images/placeholder-4by3.svg" alt="#">
         </div>
       </div>
-      <div class="unit-s-1 pad-b-2 pad-t-2 grid people">
-        <div class="unit xs-1 s-1 m-1-3">
-          <img class="img-flex" src="images/placeholder-4by3.svg" alt="#">
+      <div class="unit s-1 pad-b-2 pad-t-2 grid people">
+        <div class="unit gutter xs-1 m-1-3 l-1-3 embed embed-4by3">
+          <img class="embed-item" src="images/placeholder-4by3.svg" alt="#">
         </div>
         <div class="gutter-1-2 text-right unit m-1-2">
           <h2 class="zetta">Brand Integration</h2>
@@ -135,7 +136,7 @@
     </section>
   </main>
 
-  <footer class="unit text-center m-1">
+  <footer role="contentinfo" id="contentinfo" tabindex="0" class="unit text-center m-1">
     <p>Dotted Line©</p>
   </footer>
 </body>
