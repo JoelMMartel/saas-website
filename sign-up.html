@@ -5,23 +5,31 @@
   <title>Dotted Line.</title>
   <link href="https://fonts.googleapis.com/css?family=Calistoga|Kulim+Park&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
-  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 </head>
 <body class="grid wrapper">
-  <header class="unit xs-1 s-1 m-1 l-1 grid">
+
+  <ul class="skip-links unit">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+    <li><a href="#search">Jump to form</a></li>
+    <li><a href="#contentinfo">Jump to footer</a></li>
+  </ul>
+
+  <header class="unit xs-1 s-1 m-1 l-1 grid" role="banner">
     <div class="unit text-center pad-t-1-2 xs-1 s-1 m-1-4 l-1-4">
       <h1 class="giga headline">DOTTED LINE.</h1>
     </div>
     <div class="unit micro pad-t-1-4 xs-0 s-0 m-1-4 l-1-4 unit-offset-m-1-2">
-      <button class="btn-light" type="submit" name="Log In Sign Up"><a class="text-right" href="sign-up.html">Log In / Sign Up</a></button>
+      <a class="btn text-right" href="sign-up.html">Log In / Sign Up</a>
     </div>
     <div class="unit xs-0 s-0 m-1 l-1">
-      <nav>
+      <nav role="navigation" tabindex="0">
         <ol class="list-group-inline grid">
-          <li class="unit island-1-4 xs-0 s-0 m-1-3 current text-center nav"><a href="index.html">Home</a></li>
+          <li class="unit island-1-4 xs-0 s-0 m-1-3 text-center nav"><a href="index.html">Home</a></li>
           <li class="unit island-1-4 xs-0 s-0 m-1-3 text-center nav"><a href="tour.html">Take a Tour</a></li>
           <li class="unit island-1-4 xs-0 s-0 m-1-3 text-center nav"><a href="partners.html">Partners</a></li>
         </ol>
@@ -29,13 +37,13 @@
     </div>
   </header>
 
-  <section class="gutter unit s-1 pad-t-2">
-    <h1>Join the Dotted Line Family!</h1>
+  <section role="main" class="gutter unit s-1 pad-t-2">
+    <h2>Join the Dotted Line Family!</h2>
     <p class="mega">Welcome aboard! Enter the required information below to continue.</p>
     <fieldset>
       <legend class="italic giga">Register</legend>
     </fieldset>
-    <form class="grid" method="POST" action="#">
+    <form role="search" class="grid" method="POST" action="#">
       <div class="push unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2">
         <label for="name">Name</label>
         <input id="name" name="name" required>
@@ -76,7 +84,7 @@
   </section>
 
   <section class="gutter unit s-1 pad-t-2">
-    <h1>Already a Member?</h1>
+    <h2>Already a Member?</h2>
     <fieldset>
       <legend class="italic giga">Log In</legend>
     </fieldset>

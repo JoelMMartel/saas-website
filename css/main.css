@@ -44,18 +44,22 @@ button a {
 }
 
 h1 {
-  font-family: "Calistoga", cursive;
+  font-family: Calistoga, cursive;
 }
 
 h2 {
-  font-family: "Calistoga", cursive;
+  font-family: Calistoga, cursive;
 }
 
 .current {
   background-color: #777;
 }
 
-nav ol li:hover{
+nav ol li:hover {
+  background-color: #777;
+}
+
+nav ol li a:hover {
   background-color: #777;
 }
 
