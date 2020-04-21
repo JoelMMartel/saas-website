@@ -52,3 +52,7 @@ h2 {
   font-family: "Calistoga", cursive;
   font-weight: lighter;
 }
+
+.current {
+  background-color: #777;
+}

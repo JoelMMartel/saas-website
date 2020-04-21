@@ -28,5 +28,80 @@
       </nav>
     </div>
   </header>
+
+  <section class="gutter unit s-1 pad-t-2">
+    <h1>Join the Dotted Line Family!</h1>
+    <p class="mega">Welcome aboard! Enter the required information below to continue.</p>
+    <fieldset>
+      <legend class="italic giga">Register</legend>
+    </fieldset>
+    <form class="grid" method="POST" action="#">
+      <div class="push unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2">
+        <label for="name">Name</label>
+        <input id="name" name="name" required>
+      </div>
+      <div class="push business gutter-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+        <label for="business">Business Name (Optional)</label>
+        <input id="business" type="name" name="business">
+      </div>
+      <div class="push unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Johnny@Appleseed.com" required>
+      </div>
+      <div class="push unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2">
+        <label for="Plan">Select a Plan</label>
+        <select id="plans" name="Plans">
+          <option>Basic — $13/Month</option>
+          <option>Small Business – $40/Month</option>
+          <option>Enterprise — Contact Us</option>
+        </select>
+      </div>
+      <div class="push unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2">
+        <label for="credit">Credit Card</label>
+        <input id="number" name="credit card" required placeholder="1111-2222-3333-4444"></input>
+      </div>
+      <div class="push unit gutter-1-2 xs-1 s-1 m-1-4 l-1-4">
+        <label for="cvv">CVV</label>
+        <input id="number" name="cvv" required placeholder="***"></input>
+      </div>
+      <div class="push unit xs-1 s-1 m-1 l-1 gutter-1-2">
+        <label for="address">Billing Address</label>
+        <input id="address" name="address" required></input>
+      </div>
+
+      <div class="push unit xs-1 s-1 m-1 l-1 text-center">
+        <button class="btn" title="Submit Information" type="submit">Register</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="gutter unit s-1 pad-t-2">
+    <h1>Already a Member?</h1>
+    <fieldset>
+      <legend class="italic giga">Log In</legend>
+    </fieldset>
+    <form class="grid" method="POST" action="#">
+
+      <div class="push unit gutter-1-2 xs-1 s-1 m-1-2 l-1-2">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Johnny@Appleseed.com" required>
+      </div>
+      <div class="push business gutter-1-2 unit xs-1 s-1 m-1-2 l-1-2">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" required>
+      </div>
+
+      <div class="push unit xs-1 s-1 m-1 l-1 text-center">
+        <button class="btn" title="Submit Information" type="submit">Log In</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="unit text-center m-1">
+    <p>Dotted Line©</p>
+  </footer>
+
+
+
 </body>
 </html>
