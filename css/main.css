@@ -1,0 +1,54 @@
+html {
+  font-family: "Kulim Park", sans-serif;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav {
+  background-color: #ccc;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.sleep {
+  background-color: #aaa;
+  border-style: dotted none;
+  border-width: thick;
+}
+
+.flex {
+  background-color: #aaa;
+  border-style: none;
+}
+
+.secure {
+  background-color: #aaa;
+  border-style: dotted none;
+  border-width: thick;
+}
+
+footer {
+  background-color: #aaa;
+  border-style: dotted none none;
+  border-width: thick;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1 {
+  font-family: "Calistoga", cursive;
+  font-weight: lighter;
+}
+
+h2 {
+  font-family: "Calistoga", cursive;
+  font-weight: lighter;
+}
