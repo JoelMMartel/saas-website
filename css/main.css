@@ -56,3 +56,11 @@ h2 {
 .current {
   background-color: #777;
 }
+
+nav ol li:hover{
+  background-color: #777;
+}
+
+.headline {
+  margin: 0;
+}
