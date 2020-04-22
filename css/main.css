@@ -1,5 +1,27 @@
+.color-primary-0 { color: #FFB858 }	/* Main Primary color */
+.color-primary-1 { color: #FFFAF3 }
+.color-primary-2 { color: #FFD59A }
+.color-primary-3 { color: #FF9E19 }
+.color-primary-4 { color: #FF9400 }
+
+.color-secondary-1-0 { color: #FFD658 }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #FFFCF3 }
+.color-secondary-1-2 { color: #FFE69A }
+.color-secondary-1-3 { color: #FFC719 }
+.color-secondary-1-4 { color: #FFC000 }
+
+.color-secondary-2-0 { color: #FF8958 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #FFF7F3 }
+.color-secondary-2-2 { color: #FFB89A }
+.color-secondary-2-3 { color: #FF5D19 }
+.color-secondary-2-4 { color: #FF4C00 }
+
 html {
   font-family: "Kulim Park", sans-serif;
+}
+
+header {
+  background-color: #ffd658;
 }
 
 .nav a {
@@ -8,32 +30,65 @@ html {
 }
 
 nav {
-  background-color: #ccc;
+  background-color: #ffd59a;
 }
 
 body {
-  background-color: #ddd;
+  background-color: #fffaf3;
 }
 
-.sleep {
-  background-color: #aaa;
-  border-style: dotted none;
+.leader {
+  background-color: #ffb89a;
+  white-space: nowrap;
+  border-style: dotted none none none;
   border-width: thick;
+}
+
+.leader p {
+  white-space: normal;
+}
+
+.leader h2 {
+  white-space: normal;
 }
 
 .flex {
-  background-color: #aaa;
-  border-style: none;
+  background-color: #ffc719;
+  border-style: dotted none none none;
+  border-width: thick;
+  white-space: nowrap;
 }
 
-.secure {
-  background-color: #aaa;
-  border-style: dotted none;
+.flex p {
+  white-space: normal;
+}
+
+.flex h2 {
+  white-space: normal;
+}
+
+.people {
+  background-color: #ffb858;
+  border-style: dotted none none none;
   border-width: thick;
+  white-space: nowrap;
+}
+
+.people p {
+  white-space: normal;
+}
+
+.people h2 {
+  white-space: normal;
+}
+
+.diamond p {
+  white-space: normal;
 }
 
 footer {
-  background-color: #aaa;
+  bottom: 0;
+  background-color: #ff5d19;
   border-style: dotted none none;
   border-width: thick;
 }
@@ -47,22 +102,56 @@ h1 {
   font-family: Calistoga, cursive;
 }
 
+h1 a {
+  text-decoration: none;
+}
+
+h1 a:visited {
+  color: #000;
+}
+
+h1 a:hover {
+  color: #ff5d19;
+}
+
 h2 {
   font-family: Calistoga, cursive;
 }
 
 .current {
-  background-color: #777;
+  background-color: #ff9e19;
 }
 
 nav ol li:hover {
-  background-color: #777;
+  background-color: #ff9e19;
 }
 
 nav ol li a:hover {
-  background-color: #777;
+  background-color: #ff9e19;
 }
 
 .headline {
   margin: 0;
+}
+
+.btn {
+  background-color: #6159b2;
+  border-color: #ff5d19;
+  border-style: none;
+}
+
+.owl {
+  background-color: #ffd658;
+}
+
+.beaver {
+  background-color: #ffb89a;
+}
+
+.whale {
+  background-color: #ffd658;
+}
+
+.plan-table {
+  background-color: #ffe69a;
 }
